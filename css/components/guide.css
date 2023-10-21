@@ -1,0 +1,49 @@
+.guide {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  scroll-margin-top: 20rem;
+}
+
+.guide .guide__left {
+  max-width: 40rem;
+  flex: 1;
+}
+
+.guide .guide__left p {
+  margin: 1rem 0 2rem;
+}
+
+.guide .guide__left ul {
+  margin-left: -1.2rem;
+}
+
+.guide .guide__left ul li {
+  display: inline-block;
+}
+
+.guide .guide__left ul li a {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.guide .guide__right {
+  flex: 1;
+  max-width: 66rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .guide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guide .guide__left {
+    max-width: 66rem;
+    text-align: center;
+  }
+
+  .guide .guide__right {
+    text-align: center;
+  }
+}

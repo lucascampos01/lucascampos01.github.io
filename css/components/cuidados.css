@@ -1,0 +1,49 @@
+.cuidados {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  scroll-margin-top: 20rem;
+}
+
+.cuidados .cuidados__left {
+  max-width: 40rem;
+  flex: 1;
+}
+
+.cuidados .cuidados__left p {
+  margin: 1rem 0 2rem;
+}
+
+.cuidados .cuidados__left ul {
+  margin-left: -1.2rem;
+}
+
+.cuidados .cuidados__left ul li {
+  display: inline-block;
+}
+
+.cuidados .cuidados__left ul li a {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.cuidados .cuidados__right {
+  flex: 1;
+  max-width: 66rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .cuidados {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cuidados .cuidados__left {
+    max-width: 66rem;
+    text-align: center;
+  }
+
+  .cuidados .cuidados__right {
+    text-align: center;
+  }
+}
